@@ -14,8 +14,8 @@
     <!-- font awesome 6 icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- google fonts cdn -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- css links are below -->
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
@@ -23,6 +23,7 @@
 <body>
 
     <!-- Navigation section -->
+     <header>
     <nav>
         <ul class="navbar">
             <li>
@@ -36,8 +37,9 @@
            </li>
         </ul>
     </nav>
+</header>
 
-<aside id="fixed-sidebar">
+<aside id="fixed-sidebar" role="navigation">
   <div class="container">
     <button id="btn-close" class="close-btn">
        <i class="fa-solid fa-xmark"></i>
@@ -72,63 +74,63 @@
 <div class="team-gallery">
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Muhammad Ishaq Khan -
-     CEO & Lead Developer at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="CEO Muhammad Ishaq Khan"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Ali Khan - UI/UX Designer at
-     FrontX Team" width="100%" height="auto" loading="lazy">
+    <img src="https://placehold.co/600x400?blur=3" alt="Ali Khan - UI/UX Designer" 
+    width="100%" height="auto" loading="lazy">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Faisal Qureshi - Content writer
-     at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Faisal Qureshi - Content writer"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Ahmad Hassan - SEO expert at
-     FrontX Team" width="100%" height="auto" loading="lazy">
+    <img src="https://placehold.co/600x400?blur=3" alt="Ahmad Hassan - SEO expert"
+     width="100%" height="auto" loading="lazy">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Usama Nazeer - React Developer
-     at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Usama Nazeer - React Developer"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Tanveer Anjum - Javascript expert
-     at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Tanveer Anjum - Javascript expert"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Muhammad Ismael Mubashir - 
-    Team manager at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Mubashir Rind - 
+    Team manager" loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Madiha Lodhi - Bug fixer at FrontX
-     Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Madiha Lodhi - Bug fixer"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Ali ansari - Content writer at 
-    FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Ali ansari - Content writer"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Abbass Noor - SEO expert at 
-    FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Abbass Noor - SEO expert"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Okasha Awan - Front-end developer
-     at FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Okasha Awan - Front-end developer"
+     loading="lazy" width="100%" height="auto">
   </div>
 
   <div class="team-member">
-    <img src="https://placehold.co/600x400?blur=3" alt="Ali Asghar - backend expert at
-     FrontX Team" loading="lazy" width="100%" height="auto">
+    <img src="https://placehold.co/600x400?blur=3" alt="Ali Asghar - backend expert"
+     loading="lazy" width="100%" height="auto">
   </div>
 
 </div>
@@ -281,8 +283,6 @@
   </div>
 </section>
 
-<section id="contact">
-
 <section id="contact" class="contact-section">
   <div class="container">
     <h2 class="section-title">Contact FrontX Team</h2>
@@ -387,6 +387,7 @@
   </div>
 </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
 </body>
 </html>
