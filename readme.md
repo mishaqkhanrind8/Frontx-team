@@ -24,8 +24,7 @@ _Coming Soon_
 
 ## 📬 Contact
 For collaborations and project inquiries:  
-**Email:** your-email@example.com  
-**GitHub:** https://github.com/yourusername  
+**Email:** aonemobilesncomputers786@gmail.com.com
 
 ---
 
