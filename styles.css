@@ -225,6 +225,42 @@ div.team-member img:hover {
     transform: scale(1.02);
 }
 
+@media (max-width: 1025px) {
+  div.team-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+    
+  div.team-member {
+    height: 280px;
+  }
+
+}
+
+@media (max-width: 769px) {
+  div.team-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+    
+  div.team-member {
+    height: 320px;
+  }
+
+}
+
+@media (max-width: 601px) {
+  div.team-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+    
+  div.team-member {
+    height: 245px;
+  }
+
+}
+
 @media (max-width: 431px) {
   div.team-gallery {
     grid-template-columns: auto;
@@ -232,11 +268,18 @@ div.team-member img:hover {
   }
     
   div.team-member {
-    height: 260px;
+    height: 360px;
   }
 
   aside div.container {
     width: 70%;
   }
 
+h1.hero-title {
+    font-size: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 14px;
+}
 }
