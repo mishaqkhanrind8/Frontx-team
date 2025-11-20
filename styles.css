@@ -225,46 +225,39 @@ div.team-member img:hover {
     transform: scale(1.02);
 }
 
-@media (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   div.team-gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
   }
     
   div.team-member {
     height: 280px;
   }
-
 }
 
-@media (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   div.team-gallery {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
   }
     
   div.team-member {
     height: 320px;
   }
-
 }
 
-@media (max-width: 601px) {
+@media only screen and (max-width: 600px) {
   div.team-gallery {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
   }
     
   div.team-member {
     height: 245px;
   }
-
 }
 
-@media (max-width: 431px) {
+@media only screen and (max-width: 430px) {
   div.team-gallery {
     grid-template-columns: auto;
-    grid-template-rows: auto;
   }
     
   div.team-member {
@@ -275,11 +268,11 @@ div.team-member img:hover {
     width: 70%;
   }
 
-h1.hero-title {
+  h1.hero-title {
     font-size: 1.5rem;
-}
+  }
 
-.hero-section p {
+  .hero-section p {
     font-size: 14px;
-}
+  }
 }
