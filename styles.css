@@ -43,6 +43,7 @@ nav {
     inset: 0 0 auto 0;
     background-color: #fff;
     color: #111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 99;
 }
 
@@ -60,22 +61,26 @@ ul.navbar {
 .navbar-brand {
     display: block;
     font-size: 1.5rem;
-    color: #111;
+    color: #1e90ff;
     text-decoration: none;
     padding: 8px 16px;
     font-weight: 600;
     font-style: italic;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: all 0.4s ease, color 0.4s ease;
+}
+
+.navbar-brand span {
+    color:  #4682b4;
 }
 
 .navbar-brand:hover {
-    background-color: #e0e0e0;
-    color: #000;
+    background-color: #d6f0ff;
+    color: #004080;
 }
 
 .toggler-btn {
   padding: 14px 16px;
-  color: #111;
+  color: #1e90ff;
   background-color: #fff;
   font-size: 1.5rem;
   border: none;
@@ -84,8 +89,8 @@ ul.navbar {
 }
 
 .toggler-btn:hover {
-    background-color: #e0e0e0;
-    color: #000;
+    background-color: #cce7ff;
+    color: #003366;
 }
 
 #fixed-sibebar {
@@ -122,13 +127,18 @@ aside div.container a {
 }
 
 aside div.container a:hover {
-  background-color: #e0e0e0;
-  color: #000;
+  background-color: #cce7ff;
+  color: #003366;
 }
 
 aside div.container a.brand {
     font-size: 1.5rem;
+    color: #1e90ff;
     font-style: italic;
+}
+
+aside div.container a.brand span {
+    color: #4682b4;
 }
 
 .close-btn {
@@ -142,7 +152,7 @@ aside div.container a.brand {
 }
 
 .close-btn:hover {
-    color: orangered;
+    color: #0000ff;
 }
 
 main {
@@ -190,12 +200,12 @@ div.team-gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 div.team-member {
     box-shadow: 0 4px 3px rgba(0,0,0, 0.15);
-    height: 200px;
+    height: 230px;
     border-radius: 10px;
 }
 
@@ -207,10 +217,12 @@ div.team-member img {
     border-radius: 10px;
     opacity: 0.8;
     transition: all 0.4s ease;
+    transform: scale(1);
 }
 
 div.team-member img:hover {
     opacity: 1;
+    transform: scale(1.02);
 }
 
 @media (max-width: 431px) {
