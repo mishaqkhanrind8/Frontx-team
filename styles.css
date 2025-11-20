@@ -415,6 +415,7 @@ div.team-member img:hover {
 @media only screen and (max-width: 430px) {
   div.team-gallery {
     grid-template-columns: auto;
+    padding: 0 1rem;
   }
     
   div.team-member {
