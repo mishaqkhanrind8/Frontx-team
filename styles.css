@@ -757,6 +757,10 @@ aside div.container {
     grid-template-columns: repeat(3, 1fr);
   }
   
+  div.team-member {
+    height: 280px;
+  }
+
   ul.plan-card li {
   min-height: 75px;  
   display: flex;   
@@ -766,9 +770,7 @@ aside div.container {
   padding: 10px 16px;
 }
 
-  div.team-member {
-    height: 280px;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
