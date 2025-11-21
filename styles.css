@@ -161,12 +161,32 @@ main {
 }
 
 .hero-title {
-    color: #717171;
+    color: #2c3e50;
     font-style: italic;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #008b8b;
+  margin: 0.3rem auto 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.hero-title:hover::after {
+  width: 70%;
 }
 
 .hero-section p {
 margin-bottom: 1.3rem;
+color: #555555;
 }
 
 .hero-btn {
@@ -178,24 +198,28 @@ margin-bottom: 1.3rem;
 
 .hero-btn button {
     display: block;
-    background-color: darkcyan;
+    background: linear-gradient(135deg, #008b8b, #00a0a0);
     border: none;
     color: #f9f9f9;
     padding: 16px 24px;
     font-size: 1rem;
     border-radius: 10px;
-    transition: background-color 0.4s ease;
+    transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 
 .hero-btn button:hover {
-    background-color: #0c3f3f;
+    background: linear-gradient(135deg, #006666, #008080);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 div.team-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 1rem;
     padding: 0 10px;
 }
 
@@ -219,6 +243,7 @@ div.team-member img {
 div.team-member img:hover {
     opacity: 1;
     transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .pagination {
@@ -257,7 +282,7 @@ div.team-member img:hover {
 
 .about-section h2 {
   text-align: center;
-  color: #1a1a1a;
+  color: #2c3e50;
   margin-bottom: 1.8rem;
   font-size: 1.8rem;
 }
@@ -284,7 +309,12 @@ div.team-member img:hover {
 
 .about-info h3 {
   margin-top: 1rem;
+  color: #2c3e50;
   font-size: 1.3rem;
+}
+
+.about-info p {
+  color: #666666;
 }
 
 .contact-buttons {
@@ -295,23 +325,31 @@ div.team-member img:hover {
 
 .contact-buttons a {
   display: block;
-  color: #1a1a1a;
+  color: #2c3e50;
   text-decoration: none;
   margin-bottom: 1rem;
-  transition: all 0.4s ease;
-  width: 180px;
+  transition: all 0.3s ease;
+  width: 250px;
+  font-weight: 500;
 }
 
 .contact-buttons a:hover {
   color: #1e90ff;
   text-decoration: underline;
+  transform: translateX(3px);
 }
 
 .contact-buttons a i {
   padding: 0 1rem 0 0;
   font-size: 1.5rem;
-  color: #1e90ff;
+  color: #1e90ff; 
+  transition: color 0.3s ease;
 }
+
+.contact-buttons a:hover i {
+  color: #1461a8; 
+}
+
 
 .portfolio-section {
   background-color: #ececec;
@@ -325,10 +363,12 @@ div.team-member img:hover {
 
 .portfolio-section .container h2 {
   font-size: 1.3rem;
+  color: #2c3e50;
 }
 
 .portfolio-section .container p {
   margin: 1rem 0 .7rem;
+  color: #555555;
 }
 
 .skill-bar {
@@ -377,6 +417,7 @@ div.team-member img:hover {
 
 .services-section h2 {
   text-align: center;
+  color: #2c3e50;
   margin-bottom: 2.8rem;
   font-size: 1.8rem;
 }
@@ -445,9 +486,109 @@ li.plan-pro {
   background-color: #1e3a5f !important;
 }
 
+.btn-offer {
+  padding: 12px 16px;
+  border: none;
+  background: linear-gradient(135deg, #008b8b, #006f6f);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 200;
+  transition: background 0.4s ease;
+  margin: 1rem auto;
+}
 
+.btn-offer:hover {
+  background: linear-gradient(135deg, #1e3a5f, #142b44);
+}
 
+.contact-section {
+  background-color: #ddd;
+  padding: 2.5rem 1rem 3.5rem;
+}
 
+.contact-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+} 
+
+.section-title {
+  color: #1e90ff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+
+label {
+  color: #333333; 
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  outline: none;
+  border: 1px solid #bbb; 
+  border-radius: 5px;
+  color: #333; 
+  transition: all 0.3s ease;
+  margin-bottom: 1rem
+}
+
+input:focus, textarea:focus {
+  border-color: #1e90ff; 
+  box-shadow: 0 0 5px #1e90ff4d;
+}
+
+.btn-submit {
+  background-color: #187bcd;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1461a8;
+  transform: translateY(-2px);
+}
+
+.form-alert {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.form-alert p {
+  color: #2a9d8f;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Add a class when showing the alert */
+.form-alert.show p {
+  opacity: 1; 
+}
 
 
 @media only screen and (max-width: 1024px) {
