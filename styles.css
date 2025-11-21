@@ -498,6 +498,11 @@ ul.plan-card li:not(.plan-header) {
   div.team-member {
     height: 245px;
   }
+
+  .about-image {
+    height: 260px;
+  }
+
 }
 
 @media only screen and (max-width: 430px) {
@@ -520,5 +525,9 @@ ul.plan-card li:not(.plan-header) {
 
   .hero-section p {
     font-size: 14px;
+  }
+
+    .about-image {
+    height: 200px;
   }
 }
