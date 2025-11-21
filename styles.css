@@ -197,7 +197,7 @@ main {
 }
 
 .hero-section {
-  background: linear-gradient(180deg, #fafafa, #f3f4f6);
+  background-color: #f9f9f9;
   text-align: center;
   padding: 2.5rem 0 1.5rem;
 }
@@ -395,7 +395,7 @@ div.team-member img:hover {
 
 
 .portfolio-section {
-  background-color: #f5f7fa;
+  background-color: #ececec;
   padding: 2.5rem 1rem 3.5rem;
 }
 
@@ -455,7 +455,7 @@ div.team-member img:hover {
 
 .services-section {
   padding: 1.8rem 1rem 3.5rem;
-  background: #f5f7fa;
+  background: #e4e4e4;
 }
 
 .services-section h2 {
@@ -547,7 +547,7 @@ li.plan-pro {
 }
 
 .contact-section {
-  background-color: #ddd;
+  background-color: #dddddd;
   padding: 2.5rem 1rem 3.5rem;
 }
 
@@ -642,17 +642,34 @@ aside div.container {
     will-change: transform;
 }
 
-.section-animate {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity .6s ease, transform .6s ease;
+.footer-section {
+  background-color: #d6d6d6;
+  padding: 2.5rem 1rem 0.5rem;
 }
 
-.section-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
+.footer-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
 }
 
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h2 {
+  color: #0a2a43;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.footer-column p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
 
 @media only screen and (max-width: 1024px) {
   div.team-gallery {
