@@ -487,7 +487,7 @@ li.plan-pro {
 div.plans-wrapper {
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 ul.plan-card li:not(.plan-header) {
@@ -496,7 +496,7 @@ ul.plan-card li:not(.plan-header) {
 }
 
   div.team-member {
-    height: 245px;
+    height: 235px;
   }
 
   .about-image {
@@ -509,6 +509,7 @@ ul.plan-card li:not(.plan-header) {
   div.team-gallery {
     grid-template-columns: auto;
     padding: 0 1rem;
+    gap: 1rem;
   }
     
   div.team-member {
