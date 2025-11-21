@@ -642,11 +642,6 @@ aside div.container {
     will-change: transform;
 }
 
-a:focus, button:focus {
-    outline: 2px solid #1e90ff;
-    outline-offset: 3px;
-}
-
 .section-animate {
     opacity: 0;
     transform: translateY(20px);
