@@ -499,7 +499,7 @@ ul.plan-card li:not(.plan-header) {
 
 @media only screen and (max-width: 430px) {
   div.team-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     padding: 0 1rem;
     gap: 1rem;
   }
