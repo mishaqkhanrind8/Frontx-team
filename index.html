@@ -17,6 +17,9 @@
 
     <title>FrontX Team</title>
 
+    <!-- Preload custom font -->
+    <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <style>
       /* Reset / Base Styles */
 *,
@@ -354,17 +357,15 @@ div.team-member img:hover {
   color: #ffffff;
 }
     </style>
-<!-- Preload custom font -->
-<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-<!-- Main CSS (async load to reduce render-blocking) -->
+<!-- Async load main stylesheet -->
 <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
 <noscript>
   <link rel="stylesheet" href="styles.css">
 </noscript>
 
-<!-- Font Awesome (async load) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+<!-- Font Awesome: only load used icons via kit (reduces unused CSS) -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
 <noscript>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </noscript>
