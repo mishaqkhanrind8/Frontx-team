@@ -451,7 +451,7 @@ input:focus, textarea:focus {
   }
     
   div.team-member {
-    height: 320px;
+    aspect-ratio: 1;
   }
 
 div.plans-wrapper {
@@ -488,7 +488,7 @@ ul.plan-card li:not(.plan-header) {
 }
 
   div.team-member {
-    height: 235px;
+  aspect-ratio: 1;
   }
 
   .about-image {
@@ -505,7 +505,7 @@ ul.plan-card li:not(.plan-header) {
   }
     
   div.team-member {
-    height: 360px;
+aspect-ratio: 1;
   }
 
   aside div.container {
