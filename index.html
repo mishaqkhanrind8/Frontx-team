@@ -39,8 +39,14 @@ body {
     color: #1a1a1a;
     overflow-x: hidden;
     min-height: 100vh;
-    font-display: swap; 
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter.woff2') format('woff2');
+  font-display: swap;
+}
+
 
 /* Headings */
 h1, h2, h3 {
@@ -49,7 +55,6 @@ h1, h2, h3 {
     line-height: 1.2;
     margin-bottom: 0.5em;
     font-weight: 600;
-    font-display: swap;
 }
 
 header {
@@ -244,7 +249,6 @@ main {
     position: relative;
     display: inline-block;
     letter-spacing: 0.5px;
-    font-display: swap;
     min-height: 3rem;
 }
 
@@ -277,7 +281,6 @@ main {
     transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     cursor: pointer;
-    font-display: swap; 
     min-width: 160px;
 }
 
@@ -383,7 +386,7 @@ div.team-member img:hover {
     </nav>
 </header>
 
-<aside id="fixed-sidebar" role="navigation">
+<aside id="fixed-sidebar">
   <div class="container">
     <button id="btn-close" class="close-btn">
        <i class="fa-solid fa-xmark"></i>
@@ -495,7 +498,7 @@ div.team-member img:hover {
 
   <div class="about-image">
     <img src="images/about-img.webp" alt="FrontX Team Organization
-     Photo" width="864px" height="1184px" loading="lazy">
+     Photo" width="864" height="1184" loading="lazy">
   </div>
 
 <div class="about-info">
@@ -660,7 +663,7 @@ div.team-member img:hover {
   <div class="project">
     <div class="project-image">
       <img src="images/portfolio-img.webp" alt="Project 1" class="footer-thumb"
-      width="721px" height="463px" style="width: 100%;height: auto;">
+      width="721" height="463" style="width: 100%;height: auto;">
     </div>
     <div class="project-info">
       <h3 class="project-title">Portfolio Website</h3>
