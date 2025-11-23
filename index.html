@@ -455,10 +455,27 @@ div.team-member img:hover {
 
 <div class="team-gallery">
 
+<div class="team-gallery">
+
+  <!-- FIRST IMAGE (LCP / ABOVE THE FOLD) — DO NOT USE LAZY LOADING -->
   <div class="team-member">
-    <img src="images/company-logo.webp" alt="CEO Muhammad Ishaq Khan"
-     loading="lazy" width="540" height="540">
+    <img 
+      src="images/company-logo.webp" 
+      alt="CEO Muhammad Ishaq Khan"
+      width="540" 
+      height="540"
+      fetchpriority="high">
   </div>
+
+  <!-- SECOND IMAGE — LAZY LOADED -->
+  <div class="team-member">
+    <img 
+      src="images/ceo-img.webp" alt="Ali Khan - UI/UX Designer" width="540" height="540"
+       loading="lazy" decoding="async">
+  </div>
+
+</div>
+
 
   <div class="team-member">
     <img src="images/ceo-img.webp" alt="Ali Khan - UI/UX Designer" 
