@@ -786,9 +786,9 @@ aside div.container {
 
 @media only screen and (max-width: 600px) {
   div.team-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  repeat(2 , 1fr);
   }
-    
+  
 div.plans-wrapper {
   flex-direction: column;
   gap: 1.5rem;
@@ -822,7 +822,7 @@ ul.plan-card li:not(.plan-header) {
   }
     
   div.team-member {
-    height: 300px;
+    height: 360px;
   }
 
   aside div.container {
