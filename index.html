@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta data for this landing page -->
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <meta name="description" content="FrontX Team delivers cutting-edge front-end development with 
-    responsive design, clean UI, and high-performance interfaces. We craft modern websites, optimize
-    user experience, and build scalable digital solutions tailored for brands and businesses.">
-
-    <meta name="author" content="Muhammad Ishaq Khan - CEO, FrontX Team - 03021905493">
+    <meta name="description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
+    <meta name="author" content="Muhammad Ishaq Khan, FrontX Team">
 
     <title>FrontX Team</title>
 
-    <!-- Preload custom font -->
+    <!-- ===================== PERFORMANCE OPTIMIZATION ===================== -->
+
+    <!-- Preconnect to Google Fonts (Fast + Valid) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts (No async — ensures full styling + avoids FOUT) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload Local Font (Optional - For self-hosted fonts) -->
     <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Main Stylesheet (must load normally for CSS priority) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ===================== FONT AWESOME 6 (FAST + SAFE) ===================== -->
+
+    <!-- Preload FA6 -->
+    <link rel="preload"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          as="style">
+
+    <!-- Load asynchronously (PageSpeed recommended) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          media="print"
+          onload="this.media='all'">
+
+    <!-- Fallback for no-JS browsers -->
+    <noscript>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- ===================== PWA MANIFEST ===================== -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ===================== OPTIONAL: FAVICON ===================== -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <style>
       /* Reset / Base Styles */
@@ -370,19 +400,6 @@ div.team-member img:hover {
   color: #ffffff;
 }
     </style>
-
-<!-- PRELOAD Font Awesome CSS -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" />
-
-<!-- LOAD stylesheet only when ready -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      media="print" onload="this.media='all'">
-
-<!-- Fallback for no-JS users -->
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</noscript>
 
 </head>
 <body>
