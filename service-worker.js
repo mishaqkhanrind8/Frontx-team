@@ -8,13 +8,22 @@ const ASSETS_TO_CACHE = [
   "/assets/android-chrome-512x512.png",
 ];
 
+// Helper: cache assets safely
+async function cacheAssetsSafely(cache, assets) {
+  for (const asset of assets) {
+    try {
+      await cache.add(asset);
+      console.log(`Cached: ${asset}`);
+    } catch (err) {
+      console.warn(`Failed to cache ${asset}:`, err);
+    }
+  }
+}
+
 // Install Service Worker
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log("Caching assets...");
-      return cache.addAll(ASSETS_TO_CACHE);
-    })
+    caches.open(CACHE_NAME).then((cache) => cacheAssetsSafely(cache, ASSETS_TO_CACHE))
   );
   self.skipWaiting();
 });
@@ -22,13 +31,13 @@ self.addEventListener("install", (event) => {
 // Activate Service Worker
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
+    caches.keys().then((cacheNames) =>
+      Promise.all(
         cacheNames
           .filter((name) => name !== CACHE_NAME)
           .map((name) => caches.delete(name))
-      );
-    })
+      )
+    )
   );
   self.clients.claim();
 });
@@ -37,13 +46,7 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      // return cache data or fetch from network
-      return (
-        cachedResponse ||
-        fetch(event.request).catch(() =>
-          caches.match("/index.html")
-        )
-      );
+      return cachedResponse || fetch(event.request).catch(() => caches.match("/index.html"));
     })
   );
 });
