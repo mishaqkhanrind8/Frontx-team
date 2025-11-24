@@ -21,7 +21,6 @@
 <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
 
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
 
 <meta name="theme-color" content="#ffffff">
@@ -344,12 +343,30 @@ aside div.container a.brand span {
   outline-offset: 2px;
 }
 
-
-
 main {
     margin-top: 64px;
 }
 
+/* 430px (Small Phones) */
+@media only screen and (max-width: 430px) {
+
+  div.team-member {
+    aspect-ratio: 1;
+  }
+
+  aside div.container {
+    width: 70%;
+  }
+
+  h1.hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
+}
   </style>
 
   <!-- Main Stylesheet (Async Load for rest of page) -->
