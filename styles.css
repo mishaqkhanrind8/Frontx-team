@@ -412,17 +412,20 @@ input:focus, textarea:focus {
   background-color: #274c7a;
 }
 
-/* Footer - copyright & company authority */
 .footer-bottom {
-  background-color: #7a7a7a;
-  padding: 1rem 1rem;
+  background-color: #7a7a7a; /* keep existing background */
+  margin: 1rem -1rem -0.5rem -1rem;
+  padding: 1rem;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+  color: #ffffff; 
   text-align: center;
-  margin: 2rem -1rem -8px -1rem;
-  overflow: hidden;
 }
 
 .footer-bottom a {
-  color: #ffffff; 
+  color: #ffffff; /* white links → max contrast */
   text-decoration: none;
   font-weight: 500; 
   margin: 0 8px;    
@@ -430,7 +433,7 @@ input:focus, textarea:focus {
 }
 
 .footer-bottom a:hover {
-  color: #1e90ff;   
+  color: #1e90ff; /* bright blue hover → readable and accessible */
   text-decoration: underline; 
 }
 
@@ -438,7 +441,6 @@ input:focus, textarea:focus {
   outline: 2px solid #1e90ff; /* visible focus for keyboard users */
   outline-offset: 2px;
 }
-
 
 
 /* 1024px (Small Laptops / Tablets) */
