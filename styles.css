@@ -413,32 +413,36 @@ input:focus, textarea:focus {
 }
 
 .footer-bottom {
-  background-color: #7a7a7a; /* keep existing background */
+  background-color: #7a7a7a; 
   margin: 1rem -1rem -0.5rem -1rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .footer-bottom p,
 .footer-bottom span {
   color: #ffffff; 
-  text-align: center;
+  margin: 0;
 }
 
 .footer-bottom a {
-  color: #ffffff; /* white links → max contrast */
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500; 
   margin: 0 8px;    
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background 0.3s ease;
 }
 
 .footer-bottom a:hover {
-  color: #1e90ff; /* bright blue hover → readable and accessible */
+  color: #ffffff;
+  background-color: #1e40af;
+  border-radius: 4px;
   text-decoration: underline; 
+  padding: 2px 6px;
 }
 
 .footer-bottom a:focus {
-  outline: 2px solid #1e90ff; /* visible focus for keyboard users */
+  outline: 2px solid #1e90ff;
   outline-offset: 2px;
 }
 
