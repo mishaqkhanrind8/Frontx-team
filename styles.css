@@ -504,6 +504,9 @@ input:focus, textarea:focus {
     font-size: 14px;
     min-height: 55px;
   }
+div.about-img {
+  aspect-ratio: 1.5/1;
+}
 
 }
 
