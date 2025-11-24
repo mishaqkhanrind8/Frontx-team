@@ -261,11 +261,11 @@ aside div.container {
     position: fixed;
     inset: 0 0 0 auto;
     width: 280px;
-    background: #f9fafb;
+    background: #f8fafc;
     transform: translateX(100%);
     transition: transform 0.4s ease;
     z-index: 100;
-    border-left: 1px solid #e5e7eb;
+    border-left: 1px solid #e2e8f0;
 }
 
 aside div.container.open {
@@ -273,28 +273,32 @@ aside div.container.open {
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Sidebar Links */
 aside div.container a {
     display: block;
     padding: 10px 20px;
     font-size: 1.1rem;
-    color: #1f2937;
+    color: #1e293b; 
     text-decoration: none;
     border-radius: 6px;
     transition: 0.3s;
 }
 
+/* Hover State — Modern Blue */
 aside div.container a:hover {
-    background: #e0f2fe;
-    color: #0369a1;
+    background: #dbeafe;
+    color: #1d4ed8;
 }
 
+/* Brand (FrontX Team) */
 aside div.container a.brand {
     font-size: 1.6rem;
     font-weight: 600;
     font-style: italic;
-    color: #0ea5e9;
+    color: #0f172a;
     margin-bottom: 20px;
 }
+
 
 aside div.container a.brand span {
     color: #0284c7;
@@ -387,8 +391,8 @@ main {
 
 <aside id="fixed-sidebar">
   <div class="container">
-    <button id="btn-close" class="close-btn">
-       <i class="fa-solid fa-xmark"></i>
+    <button id="btn-close" class="close-btn" aria-label="Close sidebar">
+       <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
 
     <!-- Sidebar Branding / Logo -->

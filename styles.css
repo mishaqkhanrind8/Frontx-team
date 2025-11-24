@@ -193,12 +193,16 @@ ul.plan-card li:not(.plan-header) {
   font-weight: 400;
 }
 
+/* Pricing Plan Titles */
 li.plan-price h3 {
   font-size: 1.2rem;
+  color: #111827; 
 }
 
+/* Pricing Amount / Text */
 li.plan-price span {
-  color: #717171;
+  color: #1e40af;
+  font-weight: 500;
 }
 
 .plan-header {
@@ -283,20 +287,27 @@ input:focus, textarea:focus {
   box-shadow: 0 0 5px #1e90ff4d;
 }
 
-.btn-submit {
-  background-color: #187bcd;
-  color: #fff;
+.contact-section .btn-submit {
+  background-color: #1d4ed8;
+  color: #ffffff;
   border: none;
-  padding: 12px 16px;
-  border-radius: 5px;
+  padding: 12px 18px;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-submit:hover {
-  background-color: #1461a8;
+.contact-section .btn-submit:hover {
+  background-color: #2563eb; 
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.contact-section .btn-submit:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
 }
 
 .form-alert {
@@ -401,27 +412,33 @@ input:focus, textarea:focus {
   background-color: #274c7a;
 }
 
-/* footer - copyright company authority */
+/* Footer - copyright & company authority */
 .footer-bottom {
   background-color: #7a7a7a;
-  padding: 1rem;
+  padding: 1rem 1rem;
   text-align: center;
-  margin: 2rem -1rem -0.5rem -1rem;
+  margin: 2rem -1rem -8px -1rem;
   overflow: hidden;
 }
 
 .footer-bottom a {
-    color: #ffffff; 
-    text-decoration: none;
-    font-weight: 500; 
-    margin: 0 8px;    
-    transition: color 0.3s ease;
+  color: #ffffff; 
+  text-decoration: none;
+  font-weight: 500; 
+  margin: 0 8px;    
+  transition: color 0.3s ease;
 }
 
 .footer-bottom a:hover {
-    color: #1e90ff;   
-    text-decoration: underline; 
+  color: #1e90ff;   
+  text-decoration: underline; 
 }
+
+.footer-bottom a:focus {
+  outline: 2px solid #1e90ff; /* visible focus for keyboard users */
+  outline-offset: 2px;
+}
+
 
 
 /* 1024px (Small Laptops / Tablets) */
