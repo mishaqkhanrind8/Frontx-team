@@ -16,80 +16,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   </noscript>
 
-  <!-- Preload LCP font -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrKS5bGJU9J9Huh5u.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Preload LCP font -->
+<link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrKS5bGJU9J9Huh5u.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Font Awesome 6 Async -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
+<!-- Font Awesome 6.5.1 – Preload + Async Load -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</noscript>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
 
-<!-- Basic favicons (place images in /assets/) -->
-<link rel="icon" type="image/png" sizes="16x16"   href="assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32"   href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48"   href="assets/favicon-48x48.png">
-
-<!-- Apple touch icon -->
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
-
-<!-- Android / PWA usable icons -->
 <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
 
-<!-- Optional: theme / tile colors -->
 <meta name="theme-color" content="#ffffff">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="FrontX Team">
-  <meta property="og:description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
-  <meta property="og:url" content="https://frontxteam.vercel.app/">
-  <meta property="og:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="630">
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FrontX Team">
-  <meta name="twitter:description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
-  <meta name="twitter:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
-
-  <!-- Additional SEO -->
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Inline Critical CSS (Above the Fold) -->
-  <style>
-/* Base Reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+<style>
+  /* Base Reset */
+  * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+  }
 
-html {
+  html {
     font-size: 16px;
     scroll-behavior: smooth;
-}
+  }
 
-body {
+  body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
     min-height: 100vh;
     overflow-x: hidden;
-}
+  }
 
+  /* Font Awesome CLS Fix */
+  @font-face {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-display: swap;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2") 
+         format("woff2");
+
+    /* Optional: 100% CLS mitigation */
+    ascent-override: 90%;
+    descent-override: 10%;
+    line-gap-override: 0%;
+  }
+  
 /* Navbar */
 nav {
     position: fixed;
