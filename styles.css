@@ -15,7 +15,7 @@
 .about-image {
   max-width: 800px;
   margin: 0 auto;
-  height: 400px;
+  aspect-ratio: 2/1;
 }
 
 .about-image img {
@@ -424,9 +424,7 @@ input:focus, textarea:focus {
 }
 
 
-/* ================================
-   1024px (Small Laptops / Tablets)
-================================ */
+/* 1024px (Small Laptops / Tablets) */
 @media only screen and (max-width: 1024px) {
 
   /* Team Gallery → 4 → 3 columns */
@@ -507,9 +505,6 @@ input:focus, textarea:focus {
     min-height: 55px;
   }
 
-  .about-image {
-    height: 260px;
-  }
 }
 
 /* 430px (Small Phones) */
@@ -531,7 +526,4 @@ input:focus, textarea:focus {
     font-size: 14px;
   }
 
-  .about-image {
-    height: 200px;
-  }
 }
