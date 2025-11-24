@@ -424,88 +424,99 @@ input:focus, textarea:focus {
 }
 
 
+/* ================================
+   1024px (Small Laptops / Tablets)
+================================ */
 @media only screen and (max-width: 1024px) {
+
+  /* Team Gallery → 4 → 3 columns */
   div.team-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
+  /* Team Member → use square ratio */
   div.team-member {
-    height: 280px;
+    aspect-ratio: 1;
+    width: 100%;
+    overflow: hidden;
   }
 
+  /* Plan List Items */
   ul.plan-card li {
-  min-height: 75px;  
-  display: flex;   
-  flex-direction: column;       
-  align-items: center;   
-  justify-content: center;
-  padding: 10px 16px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+  }
 }
 
 
-}
 
+/* 768px (Tablets) */
 @media only screen and (max-width: 768px) {
+
+  /* Team Gallery → 2 columns */
   div.team-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-    
+
   div.team-member {
     aspect-ratio: 1;
   }
 
-div.plans-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+  /* Plans Wrap */
+  div.plans-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 
-div.plan {
-  flex: 0 0 calc(50% - 1rem); 
-}
-
+  div.plan {
+    flex: 0 0 calc(50% - 1rem);
+  }
 
   .footer-section .container {
-  flex-direction: column;
+    flex-direction: column;
   }
-
 }
 
+
+
+/* 600px (Large Phones) */
 @media only screen and (max-width: 600px) {
-  div.team-gallery {
-    grid-template-columns:  repeat(2 , 1fr);
-  }
-  
-div.plans-wrapper {
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 0.5rem;
-}
 
-ul.plan-card li:not(.plan-header) {
-  font-size: 14px;
-    min-height: 55px;
-}
+  /* Team Gallery → 1 column */
+  div.team-gallery {
+    grid-template-columns: 1fr;
+  }
 
   div.team-member {
-  aspect-ratio: 1;
+    aspect-ratio: 1;
+  }
+
+  div.plans-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  ul.plan-card li:not(.plan-header) {
+    font-size: 14px;
+    min-height: 55px;
   }
 
   .about-image {
     height: 260px;
   }
-
 }
 
+/* 430px (Small Phones) */
 @media only screen and (max-width: 430px) {
-  div.team-gallery {
-    grid-template-columns: 1fr !important;
-    padding: 0 1rem;
-    gap: 1rem;
-  }
-    
+
   div.team-member {
-aspect-ratio: 1;
+    aspect-ratio: 1;
   }
 
   aside div.container {
@@ -520,7 +531,7 @@ aspect-ratio: 1;
     font-size: 14px;
   }
 
-    .about-image {
+  .about-image {
     height: 200px;
   }
 }

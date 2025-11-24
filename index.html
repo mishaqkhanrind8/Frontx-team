@@ -379,17 +379,18 @@ div.team-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+     grid-auto-rows: 1fr;
     gap: 1rem;
     padding: 0 10px;
 }
 
 div.team-member {
-    box-shadow: 0 4px 3px rgba(0,0,0,0.15);
-    border-radius: 10px;
     width: 100%;
     aspect-ratio: 1;
     overflow: hidden;
+    border-radius: 10px;
 }
+
 
 div.team-member img {
     display: block;
@@ -439,7 +440,9 @@ div.team-member img:hover {
 }
     </style>
     <!-- Main Stylesheet (must load normally for CSS priority) -->
-    <link rel="stylesheet" href="styles.css">
+<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
+
 </head>
 <body>
 
