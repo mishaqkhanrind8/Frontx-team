@@ -1,83 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Basic Meta Tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
-<meta name="author" content="Muhammad Ishaq Khan, FrontX Team">
-<title>FrontX Team</title>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
+  <meta name="author" content="Muhammad Ishaq Khan, FrontX Team">
+  <title>FrontX Team</title>
 
-<!-- Preconnect + Preload Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</noscript>
+  <!-- Preconnect & Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </noscript>
 
-<!-- Preload first LCP font files -->
-<link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrKS5bGJU9J9Huh5u.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Preload LCP font -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrKS5bGJU9J9Huh5u.woff2" as="font" type="font/woff2" crossorigin>
 
-<!-- Font Awesome 6 Async -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</noscript>
+  <!-- Font Awesome 6 Async -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="FrontX Team">
-<meta property="og:description" content="FrontX Team delivers modern front-end 
-development with responsive design, clean UI, fast performance, and scalable digital 
-solutions tailored for brands and businesses.">
-<meta property="og:url" content="https://frontxteam.vercel.app/">
-<meta property="og:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="630">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FrontX Team">
+  <meta property="og:description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
+  <meta property="og:url" content="https://frontxteam.vercel.app/">
+  <meta property="og:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="630">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FrontX Team">
-<meta name="twitter:description" content="FrontX Team delivers modern front-end 
-development with responsive design, clean UI, fast performance, and scalable digital 
-solutions tailored for brands and businesses.">
-<meta name="twitter:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FrontX Team">
+  <meta name="twitter:description" content="FrontX Team delivers modern front-end development with responsive design, clean UI, fast performance, and scalable digital solutions tailored for brands and businesses.">
+  <meta name="twitter:image" content="https://frontxteam.vercel.app/images/coding-img.webp">
 
-<!-- Additional SEO -->
-<meta name="robots" content="index, follow">
-<meta name="author" content="Front Team">
-<meta name="theme-color" content="#ffffff">
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
 
-<!-- Favicon Standard -->
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-<!-- Default Favicon -->
-<link rel="icon" href="assets/favicon.ico">
-
-<!-- Android Icons -->
-<link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512.png">
-
-<!-- iPhone / iOS Icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180.png">
-
-<!-- Extra iPhone Size You Requested (182×182) -->
-<link rel="apple-touch-icon" sizes="182x182" href="assets/apple-touch-icon-182.png">
-
-    <!-- ===================== PWA MANIFEST ===================== -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- ===================== OPTIONAL: FAVICON ===================== -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
-    <style>
-      /* Reset / Base Styles */
+  <!-- Inline Critical CSS (Above the Fold) -->
+  <style>
+/* Base Reset */
 *,
 *::before,
 *::after {
@@ -86,378 +62,235 @@ solutions tailored for brands and businesses.">
     padding: 0;
 }
 
-/* HTML & Body */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
-    overflow-x: hidden;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Optional: Apply swap for all font-face rules */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  src: url('https://fonts.gstatic.com/s/inter/v12/UcC0Xhy6N9jX3rZPObYn.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://fonts.gstatic.com/s/inter/v12/UcC0Xhy6N9jX3rZPObYn.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: url('https://fonts.gstatic.com/s/inter/v12/UcC0Xhy6N9jX3rZPObYn.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://fonts.gstatic.com/s/inter/v12/UcC0Xhy6N9jX3rZPObYn.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* Headings */
-h1, h2, h3 {
-    font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif;
-    color: #111;
-    line-height: 1.2;
-    margin-bottom: 0.5em;
-    font-weight: 600;
-}
-
-header {
-    position: relative;
-}
-
-/* Navbar container */
+/* Navbar */
 nav {
     position: fixed;
-    inset: 0 0 auto 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(6px);
-    color: #1f2937;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    transition: background-color .3s ease, backdrop-filter .3s ease;
     z-index: 99;
     border-bottom: 1px solid #e5e7eb;
 }
 
-
-/* Navbar list */
 ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 64px; 
+    height: 64px;
+    padding: 0 20px;
+    list-style: none;
 }
 
-/* Brand / logo link */
 .navbar-brand {
-    display: block;
     font-size: 1.6rem;
-    color: #0ea5e9;
-    text-decoration: none;
-    padding: 8px 16px;
     font-weight: 600;
     font-style: italic;
+    color: #0ea5e9;
+    text-decoration: none;
     border-radius: 6px;
-    transition: all 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 16px;
+    transition: 0.3s;
 }
 
 .navbar-brand span {
-    color: #0284c7; 
+    color: #0284c7;
 }
 
 .navbar-brand:hover {
-    background-color: #e0f2fe; 
+    background: #e0f2fe;
     color: #0369a1;
 }
 
-/* Toggler button (for mobile menu) */
-.toggler-btn {
-    padding: 12px 16px;
-    color: #0ea5e9;
-    background-color: #ffffff;
-    font-size: 1.5rem;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.toggler-btn:hover {
-    background-color: #e0f2fe; 
-    color: #0369a1; 
-    border-color: #0ea5e9;
-}
-
-/* Optional: Hover effect for navbar items */
-ul.navbar li a {
-    padding: 8px 12px;
-    color: #1f2937;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-ul.navbar li a:hover {
-    background-color: #e0f2fe;
-    color: #0369a1;
-}
-
-#fixed-sibebar {
-  position: relative;
-}
-
-/* Sidebar Container */
-aside div.container {
-    position: fixed;
-    inset: 0 0 0 auto;
-    width: 280px;
-    background-color: #f9fafb;
-    color: #1f2937; 
-    box-shadow: none;
-    -webkit-overflow-scrolling: touch;
-    transform: translateX(100%);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    z-index: 100;
-    border-left: 1px solid #e5e7eb;
-    font-family: 'Inter', sans-serif;
-}
-
-/* Active / Open state */
-aside div.container.open {
-    transform: translateX(0);
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Links inside sidebar */
-aside div.container a {
-    display: block;
-    color: #1f2937; 
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    margin: 0;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hover effect for links */
-aside div.container a:hover {
-    background-color: #e0f2fe;
-    color: #0369a1; 
-}
-
-/* Brand link */
-aside div.container a.brand {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #0ea5e9; 
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-aside div.container a.brand span {
-    color: #0284c7; 
-}
-
-/* Close button */
-.close-btn {
-    float: right;
-    padding: 10px 14px;
-    background-color: transparent;
-    border: none;
-    color: #1f2937;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close-btn:hover {
-    color: #0ea5e9; 
-}
-
-aside div.container a {
-    line-height: 1.4;
-}
-
-aside div.container {
-    will-change: transform;
-}
-
-/* subtle divider between links */
-aside div.container a + a {
-    margin-top: 4px;
-}
-
-main {
-    margin-top: 60px;
-}
-
-/* Hero Section */
+/* Hero */
 .hero-section {
-  background-color: #f9f9f9;
-  text-align: center;
-  padding: 4rem 1rem 3rem; 
-  min-height: 70vh;
+    background: #f9f9f9;
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    min-height: 70vh;
 }
 
 .hero-title {
-    color: #2c3e50;
-    font-style: italic;
     font-size: 2.4rem;
-    text-shadow: none;
     font-weight: 700;
-    position: relative;
+    font-style: italic;
+    color: #2c3e50;
     display: inline-block;
     letter-spacing: 0.5px;
+    position: relative;
     min-height: 3rem;
 }
 
 .hero-title::after {
     content: '';
     display: block;
-    width: 50%;   
-    height: 3px;  
-    background-color: #0284c7; 
-    margin: 8px auto 0; 
-    transition: width 0.4s ease; 
+    width: 50%;
+    height: 3px;
+    background: #0284c7;
+    margin: 8px auto 0;
+    transition: width 0.4s ease;
 }
 
 .hero-title:hover::after {
-    width: 70%;        
+    width: 70%;
 }
 
 .hero-section p {
-  margin-bottom: 1.5rem;
-  color: #555555;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 650px;
-  margin-inline: auto;
-  min-height: 1.5em;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0.5rem auto 1.5rem;
+    min-height: 1.5em;
 }
 
-.hero-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+div.hero-btn {
+  padding: 1rem 0 3.5rem;
 }
 
 /* Hero Button */
 .hero-btn button {
-    display: block;
+    display: inline-block;
     background: linear-gradient(135deg, #0284c7, #0ea5e9);
-    border: none;
-    color: #f9f9f9;
-    padding: 16px 24px;
+    color: #ffffff;
     font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 24px;
+    border: none;
     border-radius: 10px;
-    transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     cursor: pointer;
+    transition: 
+        background 0.4s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     min-width: 160px;
 }
 
 .hero-btn button:hover {
-    background: linear-gradient(135deg, #0369a1, #0284c7); 
+    background: linear-gradient(135deg, #0369a1, #0284c7);
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.hero-btn button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 
 /* Team Gallery */
-div.team-gallery {
+.team-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 0 10px;
 }
 
-
-div.team-member {
+.team-member {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #f0f0f0; 
-    overflow: hidden;
     border-radius: 10px;
+    overflow: hidden;
+    background: #f0f0f0;
 }
 
-
-div.team-member img {
-    display: block;
+.team-member img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.85;
     transition: transform 0.4s ease, opacity 0.4s ease;
-    transform: scale(1);
 }
 
-div.team-member img:hover {
+.team-member img:hover {
     opacity: 1;
     transform: scale(1.02);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+/* Sidebar */
+aside div.container {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 280px;
+    background: #f9fafb;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 100;
+    border-left: 1px solid #e5e7eb;
 }
 
-.pagination a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #111;
-  border-radius: 4px;
-  transition: all 0.4s ease;
+aside div.container.open {
+    transform: translateX(0);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Hover (except active) */
-.pagination a:not(.active):hover {
-  background-color: #0f172a;
-  color: #ffffff;
+aside div.container a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #1f2937;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-/* Active page */
-.pagination a.active {
-  background-color: #1e90ff;
-  color: #ffffff;
+aside div.container a:hover {
+    background: #e0f2fe;
+    color: #0369a1;
 }
-    </style>
-    <!-- Main Stylesheet (must load normally for CSS priority) -->
-<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+aside div.container a.brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #0ea5e9;
+    margin-bottom: 20px;
+}
+
+aside div.container a.brand span {
+    color: #0284c7;
+}
+
+.close-btn {
+    float: right;
+    padding: 10px 14px;
+    background: transparent;
+    border: none;
+    color: #1f2937;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #0ea5e9;
+}
+
+main {
+    margin-top: 64px;
+}
+
+  </style>
+
+  <!-- Main Stylesheet (Async Load for rest of page) -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
 </head>
 <body>
