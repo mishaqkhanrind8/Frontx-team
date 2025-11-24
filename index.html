@@ -404,16 +404,16 @@ main {
 /* Team Gallery */
 div.team-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-     grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 0 10px;
 }
 
+
 div.team-member {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
+    background-color: #f0f0f0; 
     overflow: hidden;
     border-radius: 10px;
 }
